@@ -45,13 +45,26 @@
 }
 
 .list-inline-item a {
+    transition: color 0.5s ease;
     text-decoration: none;
     color: white;
 }
 
 .list-inline-item a:hover {
     text-decoration: none;
-    color: #ddd;
+    /* color: #ddd; */
+}
+
+#mail:hover, #mail:focus {
+    color: #DB4437;
+}
+
+#whats:hover, #whats:focus {
+    color: #25D366;
+}
+
+#twitter:hover, #twitter:focus {
+    color: #1DA1F2;
 }
 
 .card-img-top {
@@ -104,7 +117,7 @@
 
 /* ********************* Scroll hover */
 
-.sites{
+.sites {
     height: 250px;
     background: url(img/ss1.png) 0 0 no-repeat;
     background-size: cover;
