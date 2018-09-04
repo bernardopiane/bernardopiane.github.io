@@ -1,83 +1,92 @@
 .full {
-    /*     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, rgba(182, 182, 182, 1)), url('img/blurred.jpg'); */
-    /* background: url("img/apple-device-blur-blurry-273222.jpg"); */
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/apple-device-blur-blurry-273222.jpg");
-    background-size: cover;
+  /*     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, rgba(182, 182, 182, 1)), url('img/blurred.jpg'); */
+  /* background: url("img/apple-device-blur-blurry-273222.jpg"); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/apple-device-blur-blurry-273222.jpg");
+  background-size: cover;
 }
 
 .section {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .section:nth-child(odd) {
-    background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 #greeting {
-    min-height: 95vh !important;
+  min-height: 95vh !important;
 }
 
 .navbar {
-    transition: all 1s;
+  transition: all 1s;
 }
 
 .main {
-    position: relative;
-    top: 20vh;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 30px;
+  position: relative;
+  top: 20vh;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 30px;
 }
 
 .jap {
-    font-family: "Noto Sans Japanese";
+  font-family: "Noto Sans Japanese";
 }
 
 .nome {
-    /* text-transform: uppercase; */
-    font-size: 50px;
-    font-family: 'Righteous', cursive;
+  /* text-transform: uppercase; */
+  font-size: 50px;
+  font-family: "Righteous", cursive;
 }
 
 .icon {
-    float: left;
-    padding-right: 1em;
+  float: left;
+  padding-right: 1em;
 }
 
 .list-inline-item a {
-    transition: color 0.5s ease;
-    text-decoration: none;
-    color: white;
+  transition: color 0.5s ease;
+  text-decoration: none;
+  color: white;
 }
 
 .list-inline-item a:hover {
-    text-decoration: none;
-    /* color: #ddd; */
+  text-decoration: none;
+  /* color: #ddd; */
 }
 
-#mail:hover, #mail:focus {
-    color: #DB4437;
+#mail:hover,
+#mail:focus {
+  color: #db4437;
 }
 
-#whats:hover, #whats:focus {
-    color: #25D366;
+#whats:hover,
+#whats:focus {
+  color: #25d366;
 }
 
-#twitter:hover, #twitter:focus {
-    color: #1DA1F2;
+#twitter:hover,
+#twitter:focus {
+  color: #1da1f2;
+}
+
+#github:hover,
+#github:focus {
+  color: #333;
 }
 
 .card-img-top {
-    max-height: 300px;
-    max-width: 300px;
+  max-height: 300px;
+  max-width: 300px;
 }
 
 .divider {
-    border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .fixScroll {
-    padding-top: 60px;
+  padding-top: 60px;
 }
 
 /* ***************************************** */
@@ -85,49 +94,49 @@
 /* Style the navbar */
 
 #navbar {
-    z-index: 100;
-    overflow: hidden;
-    background-color: #333;
+  z-index: 100;
+  overflow: hidden;
+  background-color: #333;
 }
 
 /* Navbar links */
 
 #navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 
-.sticky+.content {
-    padding-top: 60px;
+.sticky + .content {
+  padding-top: 60px;
 }
 
 /* ********************* Scroll hover */
 
 .sites {
-    height: 250px;
-    background: url(img/ss1.png) 0 0 no-repeat;
-    background-size: cover;
-    -webkit-transition: background-position 2s ease-in-out;
-    -moz-transition: background-position 2s ease-in-out;
-    -ms-transition: background-position 2s ease-in-out;
-    -o-transition: background-position 2s ease-in-out;
-    transition: background-position 2s ease-in-out;
+  height: 250px;
+  background: url(img/ss1.png) 0 0 no-repeat;
+  background-size: cover;
+  -webkit-transition: background-position 2s ease-in-out;
+  -moz-transition: background-position 2s ease-in-out;
+  -ms-transition: background-position 2s ease-in-out;
+  -o-transition: background-position 2s ease-in-out;
+  transition: background-position 2s ease-in-out;
 }
 
 .sites:hover {
-    background-position: 0px 100%;
+  background-position: 0px 100%;
 }
