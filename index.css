@@ -2,7 +2,7 @@
   /*     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, rgba(182, 182, 182, 1)), url('img/blurred.jpg'); */
   /* background: url("img/apple-device-blur-blurry-273222.jpg"); */
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("img/apple-device-blur-blurry-273222.jpg");
+    url("img/optimized/apple-device-blur-blurry-273222.jpg");
   background-size: cover;
 }
 
@@ -122,21 +122,4 @@
 
 .sticky + .content {
   padding-top: 60px;
-}
-
-/* ********************* Scroll hover */
-
-.sites {
-  height: 250px;
-  background: url(img/ss1.png) 0 0 no-repeat;
-  background-size: cover;
-  -webkit-transition: background-position 2s ease-in-out;
-  -moz-transition: background-position 2s ease-in-out;
-  -ms-transition: background-position 2s ease-in-out;
-  -o-transition: background-position 2s ease-in-out;
-  transition: background-position 2s ease-in-out;
-}
-
-.sites:hover {
-  background-position: 0px 100%;
 }
