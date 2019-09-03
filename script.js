@@ -11,6 +11,21 @@ $(window).scroll(function() {
 });
 
 $(function() {
+  $("<img/>")
+    .attr("src", "img/2.jpg")
+    .on("load", function() {
+      $(this).remove(); // prevent memory leaks as @benweet suggested
+      $("#presentation").css(
+        "background",
+        "linear-gradient(rgba(80, 81, 104, 0.404),rgba(80, 81, 104, 0.404)),url('img/2.jpg')"
+      );
+      $("#presentation").css("background-size", "cover");
+      $("#presentation").css("background-position", "center bottom");
+      $("#loader").fadeOut("slow", function() {
+        $("#loader").removeClass("d-flex");
+      });
+    });
+
   $("body").scrollspy({ target: "#list-example" });
   $("nav div ul li a[href^='#']").on("click", function(e) {
     // prevent default anchor click behavior
@@ -39,30 +54,13 @@ $(function() {
   });
 });
 
-$(function() {
-  $("<img/>")
-    .attr("src", "img/2.jpg")
-    .on("load", function() {
-      $(this).remove(); // prevent memory leaks as @benweet suggested
-      $("#presentation").css(
-        "background",
-        "linear-gradient(rgba(80, 81, 104, 0.404),rgba(80, 81, 104, 0.404)),url('img/2.jpg')"
-      );
-      $("#presentation").css("background-size", "cover");
-      $("#presentation").css("background-position", "center bottom");
-      $("#loader").fadeOut("slow", function() {
-        $("#loader").removeClass("d-flex");
-      });
-    });
-});
-
 // $(".ml9 .letters").each(function() {
-    //   $(this).html(
-    //     $(this)
-    //       .text()
-    //       .replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>")
-    //   );
-    // });
+//   $(this).html(
+//     $(this)
+//       .text()
+//       .replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>")
+//   );
+// });
 
 anime.timeline({ loop: false }).add({
   targets: ".ml9 .letter",
