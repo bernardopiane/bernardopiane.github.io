@@ -17,11 +17,6 @@ section:nth-child(odd) {
   color: white;
   font-family: "Open Sans", sans-serif;
   /* Color #505168 */
-  background: linear-gradient(
-      rgba(80, 81, 104, 0.404),
-      rgba(80, 81, 104, 0.404)
-    ),
-    url("img/2.jpg");
   background-size: cover;
   background-position: center bottom;
 }
