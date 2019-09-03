@@ -1,339 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Open+Sans:300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/bootstrap.min.css"
+      media="screen,projection"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="lightbox2-master/dist/css/lightbox.css" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Open+Sans:300,400,700" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="screen,projection" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="lightbox2-master/dist/css/lightbox.css">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-</head>
-
-<body class="text-center">
+  <body class="text-center">
+    <div id="loader" class="d-flex justify-content-center align-items-center">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>
     <section class="full d-flex align-items-center" id="presentation">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-sm-8 col-md-10 presentation-text">
-                    <h1 class="ml9">
-                        <span class="text-wrapper">
-                            <span class="letters">Bernardo Piane</span>
-                        </span>
-                    </h1>
-                    <h4 class="pt-2">Desenvolvedor</h4>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-8 col-md-10 presentation-text">
+            <h1 class="ml9">
+              <span class="text-wrapper">
+                <span class="letters">Bernardo Piane</span>
+              </span>
+            </h1>
+            <h4 class="pt-2">Desenvolvedor</h4>
+          </div>
         </div>
-        <div href="#!" id="goTo">
-            <i class="fas fa-arrow-down animated bounce"></i>
-        </div>
+      </div>
+      <div href="#!" id="goTo">
+        <i class="fas fa-arrow-down animated bounce"></i>
+      </div>
     </section>
     <div id="corpo">
-        <nav id="nav" class="navbar navbar-expand-md navbar-top navbar-dark justify-content-between">
-            <a class="navbar-brand d-block d-md-none" href="#">Bernardo Piane</a>
-            <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <nav
+        id="nav"
+        class="navbar navbar-expand-md navbar-top navbar-dark justify-content-between"
+      >
+        <a class="navbar-brand d-block d-md-none" href="#">Bernardo Piane</a>
+        <button
+          class="navbar-toggler mr-3"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul id="list-example" class="navbar-nav mr-auto d-flex justify-content-center">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#perfil">Perfil <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#exp">Experiencias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#habil">Habilidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#proj">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#cont">Contato</a>
-                    </li>
-                </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            id="list-example"
+            class="navbar-nav mr-auto d-flex justify-content-center"
+          >
+            <li class="nav-item active">
+              <a class="nav-link" href="#perfil"
+                >Perfil <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#exp">Experiencias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#habil">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proj">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cont">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section id="perfil">
+        <div class="container pt-5 pb-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-8 col-md-10">
+              <h1 class="top-text">Perfil</h1>
+              <hr />
             </div>
-        </nav>
-        <section id="perfil">
-            <div class="container pt-5 pb-5">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-8 col-md-10">
-                        <h1 class="top-text">Perfil</h1>
-                        <!-- <p class="sub-text">Desenvolvedor Web</p> -->
-                        <hr>
-                    </div>
-                </div>
-                <div class="row pt-5 justify-content-center text-left">
-                    <div class="col-12 col-sm-8 col-md-10 col-lg-3">
-                        <h3 class="top-text">Sobre mim</h3>
-                        <p>Desenvolvedor com experiencia em Sistemas Web. Graduado em Análise e Desenvolvimento de
-                            Sistemas.
-                            Habilidades incluem gerenciamento de redes de computadores, pensamento analítico e
-                            resolução criativa de problemas.
-                            Capaz de aplicar conceitos de atendimento ao cliente à TI para melhorar a experiência do
-                            usuário.
-                        </p>
-                    </div>
-                    <div class="col-12 col-sm-8 col-md-10 col-lg-4 text-center">
-                        <!-- !!! Arranjar foto decente !!! -->
-                        <img src="img/Le3H37Hi_400x400.jpg" class="rounded-circle" alt="..." height="246px">
-                    </div>
-                    <div class="col-12 col-sm-8 col-md-10 col-lg-3" id="detalhes">
-                        <h3 class="pb-3 top-text">Detalhes</h3>
-                        <h5>Nome:</h5>
-                        <p>Bernardo Leonel Delle Piane</p>
-                        <hr>
-                        <h5>Endereço:</h5>
-                        <p>Nova Friburgo, Rio de Janeiro</p>
-                    </div>
-                </div>
+          </div>
+          <div class="row pt-5 justify-content-center text-left">
+            <div class="col-12 col-sm-8 col-md-10 col-lg-3">
+              <h3 class="top-text">Sobre mim</h3>
+              <p>
+                Desenvolvedor com experiencia em Sistemas Web. Graduado em
+                Análise e Desenvolvimento de Sistemas. Habilidades incluem
+                gerenciamento de redes de computadores, pensamento analítico e
+                resolução criativa de problemas. Capaz de aplicar conceitos de
+                atendimento ao cliente à TI para melhorar a experiência do
+                usuário.
+              </p>
             </div>
-        </section>
-        <section id="exp">
-            <div class="container pt-5 pb-5">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-8 col-md-10">
-                        <h1 class="top-text">Experiencias</h1>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row justify-content-center pt-3">
-                    <div class="col-12 col-sm-8 col-md-10 text-left">
-                        <h3 class="top-text pb-3">Educação</h3>
-                        <h4>Universidade Estácio de Sá - Nova Friburgo</h4>
-                        <h5>Analise e Desenvolvimento de Sistemas</h5>
-                        <p><small>O curso prepara profissionais para criar, analisar, projetar e implementar sistemas
-                                computacionais de informação. É formatado com disciplinas para desenvolver raciocínio
-                                lógico, domínio de linguagens de programação e de metodologias de construção de
-                                projetos, entre outras.</small></p>
-                        <p class="text-right"><small>Janeiro de 2013 - Março de 2016</small></p>
-                    </div>
-                </div>
-                <div class="row justify-content-center pt-3">
-                    <div class="col-12 col-sm-8 col-md-10 text-left">
-                        <h4>Educandário Miosótis</h4>
-                        <p><small>Ensino Fundamental e Médio </small></p>
-                        <p class="text-right"><small>Dezembro de 2012</small></p>
-                    </div>
-                </div>
-                <hr>
-                <div class="row justify-content-center pt-3">
-                    <div class="col-12 col-sm-8 col-md-10 text-left">
-                        <h3 class="top-text pb-3">Carreira</h3>
-                        <h4>RCPN 1º Distrito de Nova Friburgo/RJ</h4>
-                        <h5>Escrevente</h5>
-                        <p><small>Responsável pela unidade interligada situada no Hospital Maternidade de Nova
-                                Friburgo, comunicação com outros cartórios e rede interna do cartório </small></p>
-                        <p class="text-right"><small>Dezembro de 2014 - Presente</small></p>
-                    </div>
-                </div>
-                <div class="row justify-content-center pt-3">
-                    <div class="col-12 col-sm-8 col-md-10 text-left">
-                        <h4>Desenvolvedor Autônomo</h4>
-                        <p><small>Desenvolvimento de Websites e Webapps utilizando React, Angular e Vue</small></p>
-                        <p class="text-right"><small>Presente</small></p>
-                    </div>
-                </div>
+            <div class="col-12 col-sm-8 col-md-10 col-lg-4 text-center">
+              <!-- !!! Arranjar foto decente !!! -->
+              <img
+                src="img/Le3H37Hi_400x400.jpg"
+                class="rounded-circle"
+                alt="..."
+                height="246px"
+              />
             </div>
-        </section>
-        <section id="habil">
-            <div class="container pt-5 pb-5">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-8 col-md-10">
-                        <h1 class="top-text">Habilidades</h1>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row justify-content-center text-left">
-                    <div class="col-12 col-sm-8 col-md-10 pt-3">
-                        <h5 class="top-text pb-3">Tecnologias</h5>
-                        <div class="row font-weight-light">
-                            <div class="col-12 col-lg-6">
-                                <p class="lista-item">Bootstrap<i class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i></p>
-                                <p class="lista-item">CSS(3)<i class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i></p>
-                                <p class="lista-item">HTML(5)<i class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i></p>
-                                <p class="lista-item">Javascript<i class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i></p>
-                                <p class="lista-item">Jquery<i class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i></p>
-                                <p class="lista-item">Wordpress<i class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i></p>
-                                <p class="lista-item">JSON<i class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="far fa-star float-right"></i></i></p>
-                                <p class="lista-item">SEO<i class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i><i class="far fa-star float-right"></i><i
-                                        class="far fa-star float-right"></i></i></p>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <p class="lista-item">React<i class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i><i class="far fa-star float-right"></i><i
-                                        class="far fa-star float-right"></i></i></p>
-                                <p class="lista-item">Angular<i class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i><i class="far fa-star float-right"></i><i
-                                        class="far fa-star float-right"></i></i></p>
-                                <p class="lista-item">Vue<i class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i><i class="far fa-star float-right"></i><i
-                                        class="far fa-star float-right"></i></i></p>
-                                <p class="lista-item">MySQL<i class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i><i class="far fa-star float-right"></i><i
-                                        class="far fa-star float-right"></i></i></p>
-                                <p class="lista-item">SASS/SCSS<i class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i><i class="far fa-star float-right"></i><i
-                                        class="far fa-star float-right"></i></i></p>
-                                <p class="lista-item">PHP<i class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="far fa-star float-right"></i><i class="far fa-star float-right"></i><i
-                                        class="far fa-star float-right"></i></i></p>
-                                <p class="lista-item">Laravel<i class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="far fa-star float-right"></i><i class="far fa-star float-right"></i><i
-                                        class="far fa-star float-right"></i></i></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <div class="row justify-content-center text-left">
-                    <div class="col-12 col-sm-8 col-md-10 pt-3">
-                        <h5 class="top-text pb-3">Línguas</h5>
-                        <div class="row font-weight-light">
-                            <div class="col-12 col-lg-6">
-                                <p class="lista-item">Português<i class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i></p>
-                                <p class="lista-item">Inglês<i class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="fas fa-star float-right"></i></p>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <p class="lista-item">Japonês<i class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="far fa-star float-right"></i><i class="far fa-star float-right"></i><i
-                                        class="far fa-star float-right"></i></p>
-                                <p class="lista-item">Espanhol<i class="fas fa-star float-right"></i><i class="fas fa-star float-right"></i><i
-                                        class="far fa-star float-right"></i><i class="far fa-star float-right"></i><i
-                                        class="far fa-star float-right"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-12 col-sm-8 col-md-10 col-lg-3" id="detalhes">
+              <h3 class="pb-3 top-text">Detalhes</h3>
+              <h5>Nome:</h5>
+              <p>Bernardo Leonel Delle Piane</p>
+              <hr />
+              <h5>Endereço:</h5>
+              <p>Nova Friburgo, Rio de Janeiro</p>
             </div>
-        </section>
-        <section id="proj">
-            <div class="container pt-5 pb-5">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-8 col-md-10">
-                        <h1 class="top-text">Projetos</h1>
-                        <hr>
-                        <div class="row pt-3">
-                            <div class="col-12 col-md-6 col-lg-4 pb-3">
-                                <a class="img-fluid" href="img/port/opt/ss1.png" data-lightbox="projetos" data-title="Site Wordpress">
-                                    <img class="img-fluid port-image" src="img/port/opt/ss1small.png" alt=""
-                                        data-lightbox="projetos" height="120px">
-                                </a>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 pb-3">
-                                <a class="img-fluid" href="img/port/opt/ss2.png" data-lightbox="projetos" data-title="Site Wordpress">
-                                    <img class="img-fluid port-image" src="img/port/opt/ss2small.png" alt=""
-                                        data-lightbox="projetos" height="120px">
-                                </a>
-                            </div>
-                            <!-- <div class="col-12 col-sm-6 col-lg-4 pb-3">
-                                <a class="img-fluid" href="img/port/opt/ss3.png" data-lightbox="projetos" data-title="Site Wordpress">
-                                    <img class="img-fluid port-image" src="img/port/opt/ss3small.png" alt="" data-lightbox="projetos"
-                                        data-title="My caption" height="120px">
-                                </a>
-                            </div> -->
-                            <div class="col-12 col-md-6 col-lg-4 pb-3">
-                                <a class="img-fluid" href="img/port/opt/ss4.png" data-lightbox="projetos" data-title="<a href='http://copiafullscreen.atwebpages.com' target='_blank'>Cópia do Site Fullscreen, modificado</a>">
-                                    <img class="img-fluid port-image" src="img/port/opt/ss4small.png" alt=""
-                                        data-lightbox="projetos" height="120px">
-                                </a>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 pb-3">
-                                <a class="img-fluid" href="img/port/opt/ss5.png" data-lightbox="projetos" data-title="<a href='http://copiaboadaserra.atwebpages.com' target='_blank'>Cópia do Site Boa da Serra, modificado</a>">
-                                    <img class="img-fluid port-image" src="img/port/opt/ss5small.png" alt=""
-                                        data-lightbox="projetos" height="120px">
-                                </a>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 pb-3">
-                                <a class="img-fluid" href="img/port/opt/ss6.png" data-lightbox="projetos" data-title="<a href='https://genericgym.000webhostapp.com' target='_blank'>Mockup de site de Imobiliária</a>">
-                                    <img class="img-fluid port-image" src="img/port/opt/ss6small.png" alt=""
-                                        data-lightbox="projetos" height="120px">
-                                </a>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 pb-3">
-                                <a class="img-fluid" href="img/port/reactapp.gif" data-lightbox="projetos" data-title="<a href='https://github.com/bernardopiane/react-last' target='_blank'>Aplicativo de REACT usando LastFM Api</a>">
-                                    <img class="img-fluid port-image" src="img/port/opt/reactapp.png" alt=""
-                                        data-lightbox="projetos" height="120px">
-                                </a>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 pb-3">
-                                <a class="img-fluid" href="img/port/opt/ss7.png" data-lightbox="projetos" data-title="Antiga versão do curriculo">
-                                    <img class="img-fluid port-image" src="img/port/opt/ss7small.png" alt=""
-                                        data-lightbox="projetos" height="120px">
-                                </a>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 pb-3">
-                                <a class="img-fluid" href="img/port/opt/ss8.png" data-lightbox="projetos" data-title="<a href='https://autoescolagenerica.000webhostapp.com/' target='_blank'>Autoescola">
-                                    <img class="img-fluid port-image" src="img/port/opt/ss8small.png" alt=""
-                                        data-lightbox="projetos" height="120px">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section id="exp">
+        <div class="container pt-5 pb-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-8 col-md-10">
+              <h1 class="top-text">Experiencias</h1>
+              <hr />
             </div>
-        </section>
-        <footer id="cont">
-            <div class="container pt-5 pb-5">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-8 col-md-10">
-                        <h1 class="top-text">Contato</h1>
-                    </div>
-                </div>
-                <div class="row justify-content-center text-left">
-                    <div class="col-12 col-sm-8 col-md-10 links">
-                        <div class="row justify-content-center mt-5">
-                            <div class="col-2 col-sm-2 col-md-1">
-                                <i id="whats" class="fab fa-whatsapp"></i>
-                            </div>
-                            <div class="col-5 col-md-3 d-flex align-items-center">
-                                (22) 992140353
-                            </div>
-                        </div>
-                        <div class="row justify-content-center mt-5">
-                            <div class="col-2 col-sm-2 col-md-1">
-                                <i class="fab fa-twitter"></i>
-                            </div>
-                            <div class="col-5 col-md-3 d-flex align-items-center">
-                                <a href="https://twitter.com/pianeviski" target="_blank">@Pianeviski</a>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center mt-5">
-                            <div class="col-2 col-sm-2 col-md-1">
-                                <i class="fab fa-github"></i>
-                            </div>
-                            <div class="col-5 col-md-3 d-flex align-items-center">
-                                <a href="https://github.com/bernardopiane/" target="_blank">/bernardopiane/</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="row justify-content-center pt-3">
+            <div class="col-12 col-sm-8 col-md-10 text-left">
+              <h3 class="top-text pb-3">Educação</h3>
+              <h4>Universidade Estácio de Sá - Nova Friburgo</h4>
+              <h5>Analise e Desenvolvimento de Sistemas</h5>
+              <p>
+                <small
+                  >O curso prepara profissionais para criar, analisar, projetar
+                  e implementar sistemas computacionais de informação. É
+                  formatado com disciplinas para desenvolver raciocínio lógico,
+                  domínio de linguagens de programação e de metodologias de
+                  construção de projetos, entre outras.</small
+                >
+              </p>
+              <p class="text-right">
+                <small>Janeiro de 2013 - Março de 2016</small>
+              </p>
             </div>
-        </footer>
+          </div>
+          <div class="row justify-content-center pt-3">
+            <div class="col-12 col-sm-8 col-md-10 text-left">
+              <h4>Educandário Miosótis</h4>
+              <p><small>Ensino Fundamental e Médio </small></p>
+              <p class="text-right"><small>Dezembro de 2012</small></p>
+            </div>
+          </div>
+          <hr />
+          <div class="row justify-content-center pt-3">
+            <div class="col-12 col-sm-8 col-md-10 text-left">
+              <h3 class="top-text pb-3">Carreira</h3>
+              <h4>RCPN 1º Distrito de Nova Friburgo/RJ</h4>
+              <h5>Escrevente</h5>
+              <p>
+                <small
+                  >Responsável pela unidade interligada situada no Hospital
+                  Maternidade de Nova Friburgo, comunicação com outros cartórios
+                  e rede interna do cartório
+                </small>
+              </p>
+              <p class="text-right">
+                <small>Dezembro de 2014 - Presente</small>
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-center pt-3">
+            <div class="col-12 col-sm-8 col-md-10 text-left">
+              <h4>Desenvolvedor Autônomo</h4>
+              <p>
+                <small
+                  >Desenvolvimento de Websites e Webapps utilizando React,
+                  Angular e Vue</small
+                >
+              </p>
+              <p class="text-right"><small>Presente</small></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="habil">
+        <div class="container pt-5 pb-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-8 col-md-10">
+              <h1 class="top-text">Habilidades</h1>
+              <hr />
+            </div>
+          </div>
+          <div class="row justify-content-center text-left">
+            <div class="col-12 col-sm-8 col-md-10 pt-3">
+              <h5 class="top-text pb-3">Tecnologias</h5>
+              <div class="row font-weight-light">
+                <div class="col-12 col-lg-6">
+                  <p class="lista-item">
+                    Bootstrap<i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i>
+                  </p>
+                  <p class="lista-item">
+                    CSS(3)<i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i>
+                  </p>
+                  <p class="lista-item">
+                    HTML(5)<i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i>
+                  </p>
+                  <p class="lista-item">
+                    Javascript<i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i>
+                  </p>
+                  <p class="lista-item">
+                    Jquery<i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i>
+                  </p>
+                  <p class="lista-item">
+                    Wordpress<i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i>
+                  </p>
+                  <p class="lista-item">
+                    JSON<i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i>
+                  </p>
+                  <p class="lista-item">
+                    SEO<i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i>
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="lista-item">
+                    React<i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i>
+                  </p>
+                  <p class="lista-item">
+                    Angular<i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i>
+                  </p>
+                  <p class="lista-item">
+                    Vue<i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i>
+                  </p>
+                  <p class="lista-item">
+                    MySQL<i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i>
+                  </p>
+                  <p class="lista-item">
+                    SASS/SCSS<i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i>
+                  </p>
+                  <p class="lista-item">
+                    PHP<i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i>
+                  </p>
+                  <p class="lista-item">
+                    Laravel<i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="row justify-content-center text-left">
+            <div class="col-12 col-sm-8 col-md-10 pt-3">
+              <h5 class="top-text pb-3">Línguas</h5>
+              <div class="row font-weight-light">
+                <div class="col-12 col-lg-6">
+                  <p class="lista-item">
+                    Português<i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i>
+                  </p>
+                  <p class="lista-item">
+                    Inglês<i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i>
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <p class="lista-item">
+                    Japonês<i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i>
+                  </p>
+                  <p class="lista-item">
+                    Espanhol<i class="fas fa-star float-right"></i
+                    ><i class="fas fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i
+                    ><i class="far fa-star float-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="proj">
+        <div class="container pt-5 pb-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-8 col-md-10">
+              <h1 class="top-text">Projetos</h1>
+              <hr />
+              <div class="row pt-3">
+                <div class="col-12 col-md-6 col-lg-4 pb-3">
+                  <a
+                    class="img-fluid"
+                    href="img/port/opt/ss9.png"
+                    data-lightbox="projetos"
+                    data-title="<a href='https://autoescolagenerica.000webhostapp.com/' target='_blank'>Autoescola"
+                  >
+                    <img
+                      class="img-fluid port-image"
+                      src="img/port/opt/ss9small.png"
+                      alt=""
+                      data-lightbox="projetos"
+                      height="120px"
+                    />
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 pb-3">
+                  <a
+                    class="img-fluid"
+                    href="img/port/opt/ss1.png"
+                    data-lightbox="projetos"
+                    data-title="Site Wordpress"
+                  >
+                    <img
+                      class="img-fluid port-image"
+                      src="img/port/opt/ss1small.png"
+                      alt=""
+                      data-lightbox="projetos"
+                      height="120px"
+                    />
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 pb-3">
+                  <a
+                    class="img-fluid"
+                    href="img/port/opt/ss2.png"
+                    data-lightbox="projetos"
+                    data-title="Site Wordpress"
+                  >
+                    <img
+                      class="img-fluid port-image"
+                      src="img/port/opt/ss2small.png"
+                      alt=""
+                      data-lightbox="projetos"
+                      height="120px"
+                    />
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 pb-3">
+                  <a
+                    class="img-fluid"
+                    href="img/port/opt/ss4.png"
+                    data-lightbox="projetos"
+                    data-title="<a href='http://copiafullscreen.atwebpages.com' target='_blank'>Cópia do Site Fullscreen, modificado</a>"
+                  >
+                    <img
+                      class="img-fluid port-image"
+                      src="img/port/opt/ss4small.png"
+                      alt=""
+                      data-lightbox="projetos"
+                      height="120px"
+                    />
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 pb-3">
+                  <a
+                    class="img-fluid"
+                    href="img/port/opt/ss5.png"
+                    data-lightbox="projetos"
+                    data-title="<a href='http://copiaboadaserra.atwebpages.com' target='_blank'>Cópia do Site Boa da Serra, modificado</a>"
+                  >
+                    <img
+                      class="img-fluid port-image"
+                      src="img/port/opt/ss5small.png"
+                      alt=""
+                      data-lightbox="projetos"
+                      height="120px"
+                    />
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 pb-3">
+                  <a
+                    class="img-fluid"
+                    href="img/port/opt/ss6.png"
+                    data-lightbox="projetos"
+                    data-title="<a href='https://genericgym.000webhostapp.com' target='_blank'>Mockup de site de Imobiliária</a>"
+                  >
+                    <img
+                      class="img-fluid port-image"
+                      src="img/port/opt/ss6small.png"
+                      alt=""
+                      data-lightbox="projetos"
+                      height="120px"
+                    />
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 pb-3">
+                  <a
+                    class="img-fluid"
+                    href="img/port/reactapp.gif"
+                    data-lightbox="projetos"
+                    data-title="<a href='https://github.com/bernardopiane/react-last' target='_blank'>Aplicativo de REACT usando LastFM Api</a>"
+                  >
+                    <img
+                      class="img-fluid port-image"
+                      src="img/port/opt/reactapp.png"
+                      alt=""
+                      data-lightbox="projetos"
+                      height="120px"
+                    />
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 pb-3">
+                  <a
+                    class="img-fluid"
+                    href="img/port/opt/ss7.png"
+                    data-lightbox="projetos"
+                    data-title="Antiga versão do curriculo"
+                  >
+                    <img
+                      class="img-fluid port-image"
+                      src="img/port/opt/ss7small.png"
+                      alt=""
+                      data-lightbox="projetos"
+                      height="120px"
+                    />
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 pb-3">
+                  <a
+                    class="img-fluid"
+                    href="img/port/opt/ss8.png"
+                    data-lightbox="projetos"
+                    data-title="<a href='https://autoescolagenerica.000webhostapp.com/' target='_blank'>Autoescola"
+                  >
+                    <img
+                      class="img-fluid port-image"
+                      src="img/port/opt/ss8small.png"
+                      alt=""
+                      data-lightbox="projetos"
+                      height="120px"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="cont">
+        <div class="container pt-5 pb-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-8 col-md-10">
+              <h1 class="top-text">Contato</h1>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column flex-lg-row justify-content-around align-items-center"
+          >
+            <div class="row justify-content-center mt-5">
+              <div class="col-3">
+                <i id="whats" class="fab fa-whatsapp"></i>
+              </div>
+              <div class="col d-flex align-items-center">
+                (22) 992140353
+              </div>
+            </div>
+            <a href="https://twitter.com/pianeviski" target="_blank">
+              <div class="row justify-content-center mt-5">
+                <div class="col-3">
+                  <i class="fab fa-twitter"></i>
+                </div>
+
+                <div class="col d-flex align-items-center">
+                  @Pianeviski
+                </div>
+              </div>
+            </a>
+            <a href="https://github.com/bernardopiane/" target="_blank">
+              <div class="row justify-content-center mt-5">
+                <div class="col-3">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="col d-flex align-items-center">
+                  /bernardopiane/
+                </div>
+              </div></a>
+          </div>
+        </div>
+      </footer>
     </div>
     <!--JavaScript at end of body for optimized loading-->
     <script src="jquery-3.3.1.min.js"></script>
@@ -343,6 +569,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
