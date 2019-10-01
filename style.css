@@ -177,7 +177,7 @@ li {
 }
 
 .lista-item:hover i {
-  animation: cascadeInSimple 1s 1s ease-in-out forwards;
+  animation: cascadeInSimple 0.5s 0.5s ease-in-out forwards;
   /* transform: scale(1.1); */
   /* transition: transform 0.5s; */
 }
