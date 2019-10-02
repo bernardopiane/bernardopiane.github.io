@@ -170,6 +170,8 @@ li {
   transform: scale(0.8);
   color: #505168;
   padding: 0.1em;
+  transition: transform 0.5s ease-in-out;
+  will-change: transition, transform, scale;
 }
 
 .lista-item:hover {
@@ -177,32 +179,33 @@ li {
 }
 
 .lista-item:hover i {
-  animation: cascadeInSimple 0.5s 0.5s ease-in-out forwards;
+  transform: scale(1.08);
+  /* animation: cascadeInSimple 0.5s 0.5s ease-in-out forwards; */
   /* transform: scale(1.1); */
   /* transition: transform 0.5s; */
 }
 
 .lista-item:hover i:nth-of-type(1) {
-  animation-delay: 50ms;
+  transition-delay: 50ms;
 }
 
 .lista-item:hover i:nth-of-type(2) {
-  animation-delay: 100ms;
+  transition-delay: 100ms;
 }
 
 .lista-item:hover i:nth-of-type(3) {
-  animation-delay: 150ms;
+  transition-delay: 150ms;
 }
 
 .lista-item:hover i:nth-of-type(4) {
-  animation-delay: 200ms;
+  transition-delay: 200ms;
 }
 
 .lista-item:hover i:nth-of-type(5) {
-  animation-delay: 250ms;
+  transition-delay: 250ms;
 }
 
-@keyframes cascadeInSimple {
+/* @keyframes cascadeInSimple {
   0% {
     opacity: 0;
     transform: scale(0.8);
@@ -212,20 +215,32 @@ li {
     opacity: 1;
     transform: scale(1.1);
   }
-}
+} */
 
 .rounded-circle {
   /* margin: 10px; */
   border: 1em solid #e0e0e0;
 }
 
-.port-image {
-  /* border: 0px solid rgba(0, 0, 0, 0.466); */
-  /* margin: 1em; */
-  /* height: 150px; */
+/* Image Animation */
+
+.port-image{
+  height: 150px;
+  width: 300px;
+  object-fit: cover;
+  object-position: top;
+  transition: object-position 1s;
+  will-change: transition, object-position;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
+
+.img-fluid:hover > .port-image{
+  object-position: bottom;
+  transition: object-position 10s;
+}
+
+
 #cont {
   color: white;
   background-color: #434242;
@@ -366,4 +381,21 @@ li {
     transform: scale(1);
     -webkit-transform: scale(1);
   }
+}
+
+#twitter, #whatsapp, #github{
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+#whatsapp:hover{
+  color: #25d366;
+}
+
+#twitter:hover{
+  color: #00acee;
+}
+
+#github:hover{
+  color: #f5f5f5;
 }
